@@ -1,6 +1,7 @@
 .main-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
+
 }
 
 .search {
@@ -17,4 +18,20 @@
     border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.players-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.right-site {}
+
+
+.item-length {
+    /* border: 1px solid gray; */
+    box-shadow: 0 4px 8px gray;
+    margin-right: 5px;
+    padding: 10px;
 }
