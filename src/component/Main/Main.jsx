@@ -32,8 +32,10 @@ const Main = () => {
             </div>
             <div className='right-site'>
                 <h3 className='item-length'>Added cart:</h3>
-                <div>
-
+                <div className='item-length'>
+                    {
+                        cart?.map(p => <li>{p.strPlayer}</li>)
+                    }
                 </div>
             </div>
         </div>

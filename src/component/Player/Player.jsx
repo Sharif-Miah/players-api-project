@@ -12,9 +12,12 @@ const Player = ({ player, cart, setCart }) => {
             strTeam,
             price: 1500
         }
-        const j = [info]
-        setCart(j)
-        console.log(cart);
+
+        if (cart?.length) {
+            setCart([...cart, info])
+        } else {
+            setCart([info])
+        }
     }
 
 
